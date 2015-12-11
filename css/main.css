@@ -1,0 +1,41 @@
+/*
+ * Add your css files in this folder
+ *
+ * More infos:
+ * - You need to run `npm run css` to refresh your CSS settings
+ * - Parcelify supports a watch mode - try `parcelify -w ./ build/bundle.css`
+ * - You can change your folder with the `style` property in your package.json
+ * - You can also use CSS preprocessors like SASS or LESS
+ *
+ * @see: https://github.com/rotundasoftware/parcelify
+ */
+
+ .link {
+  fill: none;
+  stroke: #666;
+  stroke-width: 1.5px;
+}
+
+#licensing {
+  fill: green;
+}
+
+.link.licensing {
+  stroke: green;
+}
+
+.link.resolved {
+  stroke-dasharray: 0,2 1;
+}
+
+circle {
+  fill: #ccc;
+  stroke: #333;
+  stroke-width: 1.5px;
+}
+
+text {
+  font: 10px sans-serif;
+  pointer-events: none;
+  text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, 0 -1px 0 #fff, -1px 0 0 #fff;
+}
