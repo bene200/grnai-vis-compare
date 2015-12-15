@@ -28,7 +28,7 @@
 		"build-browser": "npm run build",
 		"install": "npm run build && npm run css",
 		"watch": "watchify -r ./:grnai-vis-compare -v -o build/compare.js",
-		"w": "prunner \"npm run sniper\" \"npm run watch\" \"npm run watch-css\"",
+		"w": "prunner \"npm run sniper\" \"npm run watch\"",
 		"sniper": "sniper .",
 		"css": "parcelify ./ -c build/bundle.css",
 		"watch-css": "parcelify -w ./ -c build/bundle.css --loglevel verbose"
@@ -44,7 +44,6 @@
   },
   "sniper": {
     "js": [
-      "http://d3js.org/d3.v3.min.js",
       "/build/compare.js"
     ],
     "css": ["/build/bundle.css"],
